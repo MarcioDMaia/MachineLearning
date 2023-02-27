@@ -260,6 +260,7 @@ Gráficos com vetores apenas da base de dados (10% para treinamento)
 
 ---
 [2D](https://uploaddeimagens.com.br/imagens/4YxHqbc)
+
 [3D](https://uploaddeimagens.com.br/imagens/lyRzAuU)
 
 ---
@@ -267,6 +268,7 @@ Gráficos com 1000 vetores aleatórios (10% para treinamento)
 
 ---
 [2D](https://uploaddeimagens.com.br/imagens/nLGEGlI)
+
 [3D](https://uploaddeimagens.com.br/imagens/ElFX2Ag)
 
 ---
