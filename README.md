@@ -283,3 +283,6 @@ Espécie: | Virginica | Versicolor | Setosa| Total
 
 ---
 
+
+![ADextension_2FA_Configure_Step4](./media/bogusfilename/ADextension_2FA_Configure_Step4.PNG)
+
