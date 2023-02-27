@@ -243,10 +243,6 @@ Espécie: | Virginica | Versicolor | Setosa| Total
 |||||41
 
 ---
-![Imagem 3D com 1000 vetores aleatórios e com 33% do banco de dados para treinamento]()
-
----
-![Imagem 2D com 1000 vetores aleatórios e com 33% do banco de dados para treinamento]()
 
 ---
 ---
@@ -260,10 +256,18 @@ Espécie: | Virginica | Versicolor | Setosa| Total
 |||||13
 
 ---
-![Imagem 3D com 1000 vetores aleatórios e com 10% do banco de dados para treinamento]()
+Gráficos com vetores apenas da base de dados (10% para treinamento)
 
 ---
-![Imagem 2D com 1000 vetores aleatórios e com 10% do banco de dados para treinamento](https://uploaddeimagens.com.br/imagens/fBRYcjc)
+[2D](https://uploaddeimagens.com.br/imagens/4YxHqbc)
+[3D](https://uploaddeimagens.com.br/imagens/lyRzAuU)
+
+---
+Gráficos com 1000 vetores aleatórios (10% para treinamento)
+
+---
+[2D](https://uploaddeimagens.com.br/imagens/nLGEGlI)
+[3D](https://uploaddeimagens.com.br/imagens/ElFX2Ag)
 
 ---
 ---
@@ -276,13 +280,7 @@ Espécie: | Virginica | Versicolor | Setosa| Total
 **Setosa** | 0 | 0 | 3| 3
 |||||10
 
-![Imagem 3D com 1000 vetores aleatórios e com menos de 10% do banco de dados para treinamento]()
-
-
-![Imagem 2D com 1000 vetores aleatórios e com menos de 10% do banco de dados para treinamento]()
-
 ---
 
 
-![ADextension_2FA_Configure_Step4](./media/bogusfilename/ADextension_2FA_Configure_Step4.PNG)
 
