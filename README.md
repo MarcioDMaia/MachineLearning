@@ -155,7 +155,7 @@ $$
 $\Omega := min(\psi)$
 ---
 ---
-- Após o cálculo do psi, Omega busca qual dos componentes de psi é o minimo para a tomada de decisão. Ou seja:$\Omega = min(\psi)$. Com tal função, a máquina tem como acuraccy 95,1% com 33% do banco de dados para treinamento. Se mostrando eficiente com até 1% do banco de dados para treinamento, resultando em 90% de acuraccy.
+- Após o cálculo do psi, Omega busca qual dos componentes de psi é o minimo para a tomada de decisão. Ou seja: $$\Omega = min(\psi)$$. Com tal função, a máquina tem como acuraccy 95,1% com 33% do banco de dados para treinamento. Se mostrando eficiente com até 1% do banco de dados para treinamento, resultando em 90% de acuraccy.
 
 
 
