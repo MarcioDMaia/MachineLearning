@@ -236,6 +236,22 @@ Espécie: | Virginica | Versicolor | Setosa| Total
 |||||41
 
 ---
+Gráficos com vetores apenas da base de dados (33% para treinamento)
+
+---
+
+[2D](https://uploaddeimagens.com.br/imagens/a0g3Pgk)
+
+[3D](https://uploaddeimagens.com.br/imagens/veUj19g)
+
+
+---
+Gráficos com 1000 vetores aleatórios (33% para treinamento)
+
+---
+[2D](https://uploaddeimagens.com.br/imagens/LuYdoVo)
+
+[3D](https://uploaddeimagens.com.br/imagens/pxRjk50)
 
 ---
 ---
@@ -252,21 +268,18 @@ Espécie: | Virginica | Versicolor | Setosa| Total
 Gráficos com vetores apenas da base de dados (10% para treinamento)
 
 ---
-[2D com apenas o banco de dados](https://uploaddeimagens.com.br/imagens/4YxHqbc)
+[2D](https://uploaddeimagens.com.br/imagens/4YxHqbc)
 
-[2D com 1000 vetores aleatórios](https://uploaddeimagens.com.br/imagens/MWOfAWI)
+[3D](https://uploaddeimagens.com.br/imagens/lyRzAuU)
 
-[3D com apenas o banco de dados](https://uploaddeimagens.com.br/imagens/lyRzAuU)
-
-[3D com 1000 vetores aleatórios](https://uploaddeimagens.com.br/imagens/iZ3LN0g)
 
 ---
 Gráficos com 1000 vetores aleatórios (10% para treinamento)
 
 ---
-[2D com apenas o banco de dados](https://uploaddeimagens.com.br/imagens/nLGEGlI)
+[2D](https://uploaddeimagens.com.br/imagens/nLGEGlI)
 
-[3D com apenas o banco de dados](https://uploaddeimagens.com.br/imagens/ElFX2Ag)
+[3D](https://uploaddeimagens.com.br/imagens/ElFX2Ag)
 
 ---
 ---
@@ -283,3 +296,18 @@ Espécie: | Virginica | Versicolor | Setosa| Total
 
 
 
+Gráficos com vetores apenas da base de dados (>10% para treinamento)
+
+---
+[2D](https://uploaddeimagens.com.br/imagens/fLpODpI)
+
+[3D](https://uploaddeimagens.com.br/imagens/t8m7LAQ )
+
+
+---
+Gráficos com 1000 vetores aleatórios (>10% para treinamento)
+
+---
+[2D](https://uploaddeimagens.com.br/imagens/iFLVl0o)
+
+[3D](https://uploaddeimagens.com.br/imagens/JYTumPM)
