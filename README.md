@@ -322,11 +322,11 @@ Gráficos com 1000 vetores aleatórios (>10% para treinamento)
 ---
 #### DUAS DIMENSÕES E TRÊS DIMENSÕES (APENAS COM O BANCO DE DADOS)
 
->Ao compararmos os gráficos 5.1.4-1 (possui a maior % de treinamento dentre os presentes) com os 5.1.4-5 e 5.1.4-9, podemos notar que a diferença entre eles, é minima, indicando que possivelmente os falsos positivos se repetem, dificultando assim, a contastação a olho nu de possiveis divergência entre eles. O mesmo padrão aparece ao analisarmos os gráficos em 3 dimensões e que só possuem os vetores do banco de dados. Deixando assim a análise inconclusiva e fazendo que seja necessário adicionar mais vetores para uma analise mais rigorosa. 
+>Ao compararmos os gráficos [5.1.4-1](https://uploaddeimagens.com.br/imagens/a0g3Pgk) (possui a maior % de treinamento dentre os presentes) com os [5.1.4-5](https://uploaddeimagens.com.br/imagens/4YxHqbc) e [5.1.4-9](https://uploaddeimagens.com.br/imagens/fLpODpI), podemos notar que a diferença entre eles, é minima, indicando que possivelmente os falsos positivos se repetem, dificultando assim, a contastação a olho nu de possiveis divergência entre eles. O mesmo padrão se repete ao analisarmos os gráficos em 3 dimensões e que só possuem os vetores do banco de dados. Deixando assim a análise inconclusiva e fazendo que seja necessário adicionar mais vetores para uma analise mais rigorosa ou analisarmos o espeço amostral em mais dimensões. 
 
 #### TRÊS DIMENSÕES (BANCO DE DADOS + 1000 VETORES ALEATÓRIOS)
 
->Ao analisarmos e comparamos os gráficos 5.1.4-2, com os gráficos 5.1.4-6 e 5.1.4-10 
+>Ao analisarmos e comparamos os gráficos [5.1.4-4](https://uploaddeimagens.com.br/imagens/pxRjk50), com os gráficos [5.1.4-8](https://uploaddeimagens.com.br/imagens/ElFX2Ag) e [5.1.4-12](https://uploaddeimagens.com.br/imagens/JYTumPM) 
 
 
 
