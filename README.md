@@ -69,11 +69,9 @@ $$\Gamma(X) = \lambda=(\sum_{i=1}^{n}{(\sum_{j=1}^{len(X_i)}a+1, b+x_{ij})})$$
     Onde a soma de a só será realizada se e somente se Xij for diferente de zero, caso contrário, nada será feito.
     A função Gamma fica completa com um passo a mais em cada interação do somatório primário. Passo a de uma forma nominal significa a o somátorio da média das normas presentes no X. Ou seja:
 
-$$ \lambda = \bigcup_{k=1}^{n}(a_i/b_i) \leftrightarrow b_i \neq 0
-$$
+$$\lambda = \bigcup_{k=1}^{n}(a_i/b_i) \leftrightarrow b_i \neq 0$$
 
-$$\dots b_1 = 0 \rightarrow \lambda_i = C
-$$
+$$\dots b_1 = 0 \rightarrow \lambda_i = C$$
 
     De uma forma nominal, quando bi for igual a zero, a função acrescenta uma constante qualquer na matriz lambda para que não interfira nas contas seguintes. Tal função foi escrita na linguagem python da seguinte forma:
 ---
@@ -96,7 +94,7 @@ def ver2(x):
     return lista    
 ```
 ---
-### 5.1.2 Método Theta ($\Theta(column)$)
+### 5.1.2 Método Theta $\Theta(column)$
 ---
 - Método Theta caso seja específicado uma coluna, organiza de forma crescenteos vetores colunas com base na coluna especificada e devolve o 3 matrizes. São elas: [mínimo de todas as espécies separados por caracteristica], [maximo de todas as espécies separados por caracteristica] e [desvio padrão de todas as espécies separados por caracteristicas].
 
@@ -105,13 +103,10 @@ def ver2(x):
 
 Sejam $\gamma\in[0,1,2 ,3]$ e $\zeta = [X_1, X_2,\dots,X_n]\in \mathbb{R^{n}}$
 
-$$
-step = [\bigcup_{i=1}^{n}[\bigcup_{j=1}^{\zeta_i}\zeta_i\leftrightarrow\zeta_i<\zeta_j\in\forall\zeta]]
-$$
+$$step = [\bigcup_{i=1}^{n}[\bigcup_{j=1}^{\zeta_i}\zeta_i\leftrightarrow\zeta_i<\zeta_j\in\forall\zeta]]$$
 
-$$
-\Theta(\gamma) = [[\bigcup_{i=1}^{n}min(step_i)], [\bigcup_{i=1}^{n} max(step_i)], [\bigcup_{i=1}^{n}std(step_i)]]
-$$
+$$\Theta(\gamma) = [[\bigcup_{i=1}^{n}min(step_i)], [\bigcup_{i=1}^{n} max(step_i)], [\bigcup_{i=1}^{n}std(step_i)]]$$
+
 ---
         Caso 2: Coluhna não específicada:
 
