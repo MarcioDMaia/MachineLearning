@@ -56,8 +56,8 @@ $$dist(X_1, X_2) = \sqrt[]{\sum_{i=1}^n{(X_1i-X_2i)^{2}}}$$
 ## 5. Confeção - treinamento
 ----
 
-### 5.1.1 Função Gamma
- $\Gamma(X)$
+### 5.1.1 Função Gamma $\Gamma(X)$
+
 - A função Gamma cria um lambda com a média das normas dos vetores mais próximos a um novo ponto quaisquer.
 ---
 
