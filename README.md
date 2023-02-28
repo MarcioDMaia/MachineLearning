@@ -65,7 +65,7 @@ Sejam
 $\lambda_{ij}, X = (x_1, \dots, x_2)\in\mathbb{R^{n}}$, $a, b = 0$ 
 
 E a função gama definida por
-$\Gamma(X) = \lambda=(\sum_{i=1}^{n}{(\sum_{j=1}^{len(X_i)}a+1, b+x_{ij})})$
+$$\Gamma(X) = \lambda=(\sum_{i=1}^{n}{(\sum_{j=1}^{len(X_i)}a+1, b+x_{ij})})$$
     Onde a soma de a só será realizada se e somente se Xij for diferente de zero, caso contrário, nada será feito.
     A função Gamma fica completa com um passo a mais em cada interação do somatório primário. Passo a de uma forma nominal significa a o somátorio da média das normas presentes no X. Ou seja:
 
