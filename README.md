@@ -254,7 +254,11 @@ Gráficos com vetores apenas da base de dados (10% para treinamento)
 ---
 [2D com apenas o banco de dados](https://uploaddeimagens.com.br/imagens/4YxHqbc)
 
+[2D com 1000 vetores aleatórios](https://uploaddeimagens.com.br/imagens/MWOfAWI)
+
 [3D com apenas o banco de dados](https://uploaddeimagens.com.br/imagens/lyRzAuU)
+
+[3D com 1000 vetores aleatórios](https://uploaddeimagens.com.br/imagens/iZ3LN0g)
 
 ---
 Gráficos com 1000 vetores aleatórios (10% para treinamento)
