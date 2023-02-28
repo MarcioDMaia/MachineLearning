@@ -111,9 +111,7 @@ $$\Theta(\gamma) = [[\bigcup_{i=1}^{n}min(step_i)], [\bigcup_{i=1}^{n} max(step_
         Caso 2: Coluhna não específicada:
 
 Seja $\zeta = [X_1, X_2, \dots, X_n]\in\mathbb{R^{n}}$
-$$
-\Theta(X) = \zeta = \bigcup_{i=1}^{n}sorted(\zeta_i)
-$$
+$$\Theta(X) = \zeta = \bigcup_{i=1}^{n}sorted(\zeta_i)$$
 
         Onde a função sorted organiza a matriz em ordem crescente.
 ---
