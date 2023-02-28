@@ -16,6 +16,8 @@
         -5.1.3 Função Omega
 
         -5.1.4 Matriz de confusão 
+        
+        -5.1.5 Analise dos gráficos
 
     -5.2 Novos vetores
 
@@ -240,18 +242,18 @@ Gráficos com vetores apenas da base de dados (33% para treinamento)
 
 ---
 
-[2D](https://uploaddeimagens.com.br/imagens/a0g3Pgk)
+[2D - 5.1.4-1](https://uploaddeimagens.com.br/imagens/a0g3Pgk)
 
-[3D](https://uploaddeimagens.com.br/imagens/veUj19g)
+[3D - 5.1.4-2](https://uploaddeimagens.com.br/imagens/veUj19g)
 
 
 ---
 Gráficos com 1000 vetores aleatórios (33% para treinamento)
 
 ---
-[2D](https://uploaddeimagens.com.br/imagens/LuYdoVo)
+[2D - 5.1.4-3](https://uploaddeimagens.com.br/imagens/LuYdoVo)
 
-[3D](https://uploaddeimagens.com.br/imagens/pxRjk50)
+[3D - 5.1.4-4](https://uploaddeimagens.com.br/imagens/pxRjk50)
 
 ---
 ---
@@ -268,18 +270,18 @@ Espécie: | Virginica | Versicolor | Setosa| Total
 Gráficos com vetores apenas da base de dados (10% para treinamento)
 
 ---
-[2D](https://uploaddeimagens.com.br/imagens/4YxHqbc)
+[2D - 5.1.4-5](https://uploaddeimagens.com.br/imagens/4YxHqbc)
 
-[3D](https://uploaddeimagens.com.br/imagens/lyRzAuU)
+[3D - 5.1.4-6](https://uploaddeimagens.com.br/imagens/lyRzAuU)
 
 
 ---
 Gráficos com 1000 vetores aleatórios (10% para treinamento)
 
 ---
-[2D](https://uploaddeimagens.com.br/imagens/nLGEGlI)
+[2D - 5.1.4-7](https://uploaddeimagens.com.br/imagens/nLGEGlI)
 
-[3D](https://uploaddeimagens.com.br/imagens/ElFX2Ag)
+[3D - 5.1.4-8](https://uploaddeimagens.com.br/imagens/ElFX2Ag)
 
 ---
 ---
@@ -299,15 +301,42 @@ Espécie: | Virginica | Versicolor | Setosa| Total
 Gráficos com vetores apenas da base de dados (>10% para treinamento)
 
 ---
-[2D](https://uploaddeimagens.com.br/imagens/fLpODpI)
+[2D - 5.1.4-9](https://uploaddeimagens.com.br/imagens/fLpODpI)
 
-[3D](https://uploaddeimagens.com.br/imagens/t8m7LAQ )
+[3D - 5.1.4-10](https://uploaddeimagens.com.br/imagens/t8m7LAQ )
 
 
 ---
 Gráficos com 1000 vetores aleatórios (>10% para treinamento)
 
 ---
-[2D](https://uploaddeimagens.com.br/imagens/iFLVl0o)
+[2D - 5.1.4-11](https://uploaddeimagens.com.br/imagens/iFLVl0o)
 
-[3D](https://uploaddeimagens.com.br/imagens/JYTumPM)
+[3D - 5.1.4-12](https://uploaddeimagens.com.br/imagens/JYTumPM)
+
+---
+
+
+### 5.1.5 Analise dos gráficos
+
+---
+#### DUAS DIMENSÕES E TRÊS DIMENSÕES (APENAS COM O BANCO DE DADOS)
+
+    Ao compararmos os gráficos 5.1.4-1 (possui a maior % de treinamento dentre os presentes) com os 5.1.4-5 e 5.1.4-9, podemos notar que a diferença entre eles, é minima, indicando que possivelmente os falsos positivos se repetem, dificultando assim, a contastação a olho nu de possiveis divergência entre eles. O mesmo padrão aparece ao analisarmos os gráficos em 3 dimensões e que só possuem os vetores do banco de dados. Deixando assim a análise inconclusiva e fazendo que seja necessário adicionar mais vetores para uma analise mais rigorosa. 
+
+#### TRÊS DIMENSÕES (BANCO DE DADOS + 1000 VETORES ALEATÓRIOS)
+
+    Ao analisarmos e comparamos os gráficos 5.1.4-2, com os gráficos 5.1.4-6 e 5.1.4-10 
+
+
+
+
+
+
+
+
+
+
+
+
+
