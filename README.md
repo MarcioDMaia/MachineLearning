@@ -16,13 +16,13 @@
         -5.1.3 Função Omega
 
         -5.1.4 Matriz de confusão 
-        
-        -5.1.5 Analise dos gráficos
 
-    -5.2 Novos vetores
+    -5.2 Análise Gráfica
 
-    -5.3 Tratamento do banco de dados
+    -5.3 Novos vetores
 
+
+1. Conclusão
 ---
 
 ## 1. [Apresentação](https://en.wikipedia.org/wiki/K-nearest_neighbors_algorithm)
@@ -53,7 +53,7 @@ $$dist(X_1, X_2) = \sqrt[]{\sum_{i=1}^n{(X_1i-X_2i)^{2}}}$$
 
 ## 4. Dilema
 
-    Tal processo se mostrou redundante, visto que realizava diversos passos desnecessários e que muitas vezes prejudicavam uma previsão mais precisa. Para contornar o problema, mostrou-se necessário uma quebra de paradigma. Deixando a teoria de Euclides de lado e partindo para um conceito novo.
+>Tal processo se mostrou redundante, visto que realizava diversos passos desnecessários e que muitas vezes prejudicavam uma previsão mais precisa. Para contornar o problema, mostrou-se necessário uma quebra de paradigma. Deixando a teoria de Euclides de lado e partindo para um conceito novo.
 ---
 ## 5. Confeção - treinamento
 ----
@@ -68,14 +68,14 @@ $\lambda_{ij}, X = (x_1, \dots, x_2)\in\mathbb{R^{n}}$, $a, b = 0$
 
 E a função gama definida por
 $$\Gamma(X) = \lambda=(\sum_{i=1}^{n}{(\sum_{j=1}^{len(X_i)}a+1, b+x_{ij})})$$
-Onde a soma de a só será realizada se e somente se Xij for diferente de zero, caso contrário, nada será feito.
+>Onde a soma de a só será realizada se e somente se Xij for diferente de zero, caso contrário, nada será feito.
 A função Gamma fica completa com um passo a mais em cada interação do somatório primário. Passo a de uma forma nominal significa a o somátorio da média das normas presentes no X. Ou seja:
 
 $$\lambda = \bigcup_{k=1}^{n}(a_i/b_i) \leftrightarrow b_i \neq 0$$
 
 $$\dots b_1 = 0 \rightarrow \lambda_i = C$$
 
-    De uma forma nominal, quando bi for igual a zero, a função acrescenta uma constante qualquer na matriz lambda para que não interfira nas contas seguintes. Tal função foi escrita na linguagem python da seguinte forma:
+>De uma forma nominal, quando bi for igual a zero, a função acrescenta uma constante qualquer na matriz lambda para que snão interfira nas contas seguintes. Tal função foi escrita na linguagem python da seguinte forma:
 ---
 ```python
 def ver2(x):
@@ -224,7 +224,7 @@ def prev(self):
 > Resumidamente, matriz de confusão tem como objetivo mostrar os erros e acertos da inteligência artificial. A mesma mostra os acertos do processo na diagonal principal.
 ---
 
- Com testes relaizados com apenas 33% do banco de dados para treinamento, um padrão de erro se mostrou. Em grande parte dos casos, a matriz de confusão resultante tomava tal formato:
+>Com testes relaizados com apenas 33% do banco de dados para treinamento, um padrão de erro se mostrou. Em grande parte dos casos, a matriz de confusão resultante tomava tal formato:
 
 ---
 ---
@@ -238,24 +238,7 @@ Espécie: | Virginica | Versicolor | Setosa| Total
 |||||41
 
 ---
-Gráficos com vetores apenas da base de dados (33% para treinamento)
 
----
-
-[2D - 5.1.4-1](https://uploaddeimagens.com.br/imagens/a0g3Pgk)
-
-[3D - 5.1.4-2](https://uploaddeimagens.com.br/imagens/veUj19g)
-
-
----
-Gráficos com 1000 vetores aleatórios (33% para treinamento)
-
----
-[2D - 5.1.4-3](https://uploaddeimagens.com.br/imagens/LuYdoVo)
-
-[3D - 5.1.4-4](https://uploaddeimagens.com.br/imagens/pxRjk50)
-
----
 ---
 * Teste com 10% do banco de dados para treinamento (acuracy = 92,307%)
 
@@ -267,24 +250,8 @@ Espécie: | Virginica | Versicolor | Setosa| Total
 |||||13
 
 ---
-Gráficos com vetores apenas da base de dados (10% para treinamento)
-
 ---
-[2D - 5.1.4-5](https://uploaddeimagens.com.br/imagens/4YxHqbc)
 
-[3D - 5.1.4-6](https://uploaddeimagens.com.br/imagens/lyRzAuU)
-
-
----
-Gráficos com 1000 vetores aleatórios (10% para treinamento)
-
----
-[2D - 5.1.4-7](https://uploaddeimagens.com.br/imagens/nLGEGlI)
-
-[3D - 5.1.4-8](https://uploaddeimagens.com.br/imagens/ElFX2Ag)
-
----
----
 * Teste com menos de 10% do banco de dados para treinamento (acuracy = 90%)
 
 Espécie: | Virginica | Versicolor | Setosa| Total
@@ -294,49 +261,403 @@ Espécie: | Virginica | Versicolor | Setosa| Total
 **Setosa** | 0 | 0 | 3| 3
 |||||10
 
+
+### 5.2 Análise Gráfica
+
+#### Triades de mesmos parâmetros:
+##### Gráficos 2D com apenas o banco de dados 
+
+---
+*Comprimento sepala X Largura Sepala:*
+
+---
+<img src = "Graficos/33/33_2D_BD_01.png">
+33% do banco de dados para treinamentos (acuracy: 95,1%)
+
+---
+<img src = "Graficos/10/10_2D_BD_01.png">
+10% do banco de dados para treinamento (acuracy: 92,307%)
+
+---
+<img src = "Graficos/9/9_2D_BD_01.png">
+Menos de 10% do banco de dados para treinamento (acuracy: 90%)
+
+---
+---
+*Comprimento Sepala X Comprimento Petala*
+
+---
+<img src = "Graficos/33/33_2D_BD_02.png">
+33% do banco de dados para treinamentos (acuracy: 95,1%)
+
+---
+<img src = "Graficos/10/10_2D_BD_02.png">
+10% do banco de dados para treinamento (acuracy: 92,307%)
+
+---
+<img src = "Graficos/9/9_2D_BD_02.png">
+Menos de 10% do banco de dados para treinamento (acuracy: 90%)
+
+---
+---
+*Comprimento Sepala X Comprimento Petala*
+
+---
+<img src = "Graficos/33/33_2D_BD_03.png">
+33% do banco de dados para treinamentos (acuracy: 95,1%)
+
+---
+<img src = "Graficos/10/10_2D_BD_03.png">
+10% do banco de dados para treinamento (acuracy: 92,307%)
+
+---
+---
+<img src = "Graficos/9/9_2D_BD_03.png">
+Menos de 10% do banco de dados para treinamento (acuracy: 90%)
+
+---
+---
+*Largura Sepala X Comprimento Petala*
+
+---
+<img src = "Graficos/33/33_2D_BD_12.png">
+33% do banco de dados para treinamentos (acuracy: 95,1%)
+
+---
+<img src = "Graficos/10/10_2D_BD_12.png">
+10% do banco de dados para treinamento (acuracy: 92,307%)
+
+---
+<img src = "Graficos/9/9_2D_BD_12.png">
+Menos de 10% do banco de dados para treinamento (acuracy: 90%)
+
+---
+---
+*Largura Sepala X Largura Petala*
+
+---
+<img src = "Graficos/33/33_2D_BD_13.png">
+33% do banco de dados para treinamentos (acuracy: 95,1%)
+
+---
+<img src = "Graficos/10/10_2D_BD_13.png">
+10% do banco de dados para treinamento (acuracy: 92,307%)
+
+---
+<img src = "Graficos/9/9_2D_BD_13.png">
+Menos de 10% do banco de dados para treinamento (acuracy: 90%)
+
+---
+---
+*Comprimento Petala X Largura Petala*
+
+---
+<img src = "Graficos/33/33_2D_BD_23.png">
+33% do banco de dados para treinamentos (acuracy: 95,1%)
+
+---
+<img src = "Graficos/10/10_2D_BD_23.png">
+10% do banco de dados para treinamento (acuracy: 92,307%)
+
+---
+<img src = "Graficos/9/9_2D_BD_23.png">
+Menos de 10% do banco de dados para treinamento (acuracy: 90%)
+
+---
+---
+>Diante dos parametros apresentados, não há uma diferenciação significativa entre os mesmos e suas diferenças entre as porcentagens de treinamento. Possiveis motivos: 
+
+    - Má escolha de parametros para grafar
+    - Mesmos falsos positivos
+    - Por cada novo vetor ser considerado correto pela maquina
+    o montante final tende a ser semelhante, pois, com uma base
+    de treinamento baixa, a quantidade de falso positivo, não
+    interfere na decisão da máquina.
+
+---
+---
+
+##### Gráficos 2D com o banco de dados + 2 mil vetores aleatórios
+
+>Por se tratar de 3 eventos aleatórios distintos que possuem em comum apenas a aleatóriedade e suas leis de formação, concluir algo se torna impreciso, porém podemos observar o padrão de decisão com base na base de treinamento.
+
+>Obs.: Os gráficos de mesma porcentagem de treinamento, representam o mesmo evento aleatório, com a diferença única e exclusiva de parametros distintos.
+
+>Obs.2: Sou daltônico e as cores não me ajudaram a analisar os gráficos.
+
+---
+*Comprimento Setala X Largura Setala*
+
+---
+<img src = "Graficos/33/33_2D_2K_01.png">
+33% do banco de dados para treinamentos (acuracy: 95,1%)
+
+---
+<img src = "Graficos/10/10_2D_2K_01.png">
+10% do banco de dados para treinamento (acuracy: 92,307%)
+
+
+---
+<img src = "Graficos/9/9_2D_2K_01.png">
+Menos de 10% do banco de dados para treinamento (acuracy: 90%)
+
+---
+> Na triade que grafa comprimento sepala X largura sepala, podemos notar que não há uma minimante divisão linear na representação dos dados de maior dimensão em espaço de menor dimensão. Entretanto nestes exemplos, é notável que a versicolor esta mais concentrada na parte inferior do gráfico, viriginica mais ao centro e setosa mais ao topo dos gráficos. Tal comportamento fica mais evidente no gráfico do evento que usou apenas 10% do banco de dados para treinamento.
+---
+---
+*Comprimento Setala X Comprimento Petala*
+
+---
+<img src = "Graficos/33/33_2D_2K_02.png">
+33% do banco de dados para treinamentos (acuracy: 95,1%)
+
+---
+<img src = "Graficos/10/10_2D_2K_02.png">
+10% do banco de dados para treinamento (acuracy: 92,307%)
+
+---
+<img src = "Graficos/9/9_2D_2K_02.png">
+Menos de 10% do banco de dados para treinamento (acuracy: 90%)
+
+---
+> Nesta triade que grafa comprimento sepala X comprimento petala. O padrão mais notável é que a versicolor tem maior concentração acima da diagonal princial do gráfico; Setosa na parte inferior do mesmo e a Virginica do centro para cima. Como tais gráficos representam dados de maiores dimensões não é possivel analisar com mais precisão.
+
+---
+*Comprimento Setala X Largura Petala*
+
+---
+<img src = "Graficos/33/33_2D_2K_03.png">
+33% do banco de dados para treinamentos (acuracy: 95,1%)
+
+---
+<img src = "Graficos/10/10_2D_2K_03.png">
+10% do banco de dados para treinamento (acuracy: 92,307%)
+
+---
+<img src = "Graficos/9/9_2D_2K_03.png">
+Menos de 10% do banco de dados para treinamento (acuracy: 90%)
+
+---
+> Da mesma forma que as ultimas duas triades, esta possui um comportamento similar nos dois gráficos que possuem a maior % de treinamento e a menor %, enquanto que o gráfico que mostra o evento que ultilizou 10% do banco de dados para o treinamento não demonstra qualquer similaridade. Compreenssivel pois se tratam de eventos aleatórios. Alguns possiveis motivimos: Uma destribuição de pontos não homogênea. Por tratar de dados de alta dimensionalidade representados em um gráfico de menor dimensão causa uma distorção na interpretação.
+
+---
+*Largura Setala X Comprimento Petala*
+
+---
+<img src = "Graficos/33/33_2D_2K_12.png">
+33% do banco de dados para treinamentos (acuracy: 95,1%)
+
+---
+<img src = "Graficos/10/10_2D_2K_12.png">
+10% do banco de dados para treinamento (acuracy: 92,307%)
+
+---
+<img src = "Graficos/9/9_2D_2K_12.png">
+Menos de 10% do banco de dados para treinamento (acuracy: 90%)
+
+---
+
+> Diferente da ultima triade a Largura da Sepala X Comprimento Petala, demostra um padrão de classificação (ainda não podendo fazer uma separação linear [por conta da representação em menor dimensão]), porém se mostra mais notável que a versicolor se concentra acima da diagonal secundária do gráfico, enquanto que a setosa se concentra na parte inferior, e a viriginica se concentra na parte superior do gráfico.
+---
+*Largura Setala X Largura Petala*
+
+---
+<img src = "Graficos/33/33_2D_2K_13.png">
+33% do banco de dados para treinamentos (acuracy: 95,1%)
+
+---
+<img src = "Graficos/10/10_2D_2K_13.png">
+10% do banco de dados para treinamento (acuracy: 92,307%)
+
+---
+<img src = "Graficos/9/9_2D_2K_13.png">
+Menos de 10% do banco de dados para treinamento (acuracy: 90%)
+
+---
+
+> Tal triade (Largura Sepala x Largura petala) aprenseta o mesmo comportamento que a triade (comprimento sepala x largura sepala), há um padrão entre o primeiro e ultimo evento, porem no segundo evento parece não haver uma ligação lógica por conta da má representação de dados de altas dimensões em um gráfico de menor dimensão.
+---
+*Comprimento Petala X Largura Petala*
+
+---
+<img src = "Graficos/33/33_2D_2K_23.png">
+33% do banco de dados para treinamentos (acuracy: 95,1%)
+
+---
+<img src = "Graficos/10/10_2D_2K_23.png">
+10% do banco de dados para treinamento (acuracy: 92,307%)
+
+---
+<img src = "Graficos/9/9_2D_2K_23.png">
+Menos de 10% do banco de dados para treinamento (acuracy: 90%)
+
+---
+---
+
+##### Gráficos 3D com o banco de dados
+
+---
+*Comprimento Sepala x Largura Sepala X Comprimento Petala*
+
+---
+<img src = "Graficos/33/33_3D_BD_012.png">
+33% do banco de dados para treinamentos (acuracy: 95,1%)
+
+---
+<img src = "Graficos/10/10_3D_BD_012.png">
+10% do banco de dados para treinamento (acuracy: 92,307%)
+
+---
+<img src = "Graficos/9/9_3D_BD_012.png">
+Menos de 10% do banco de dados para treinamento (acuracy: 90%)
+
+---
+---
+*Comprimentos Sepala X Comprmento Petala X Largura Petala*
+
+---
+<img src = "Graficos/33/33_3D_BD_023.png">
+33% do banco de dados para treinamentos (acuracy: 95,1%)
+
+---
+<img src = "Graficos/10/10_3D_BD_023.png">
+10% do banco de dados para treinamento (acuracy: 92,307%)
+
+---
+<img src = "Graficos/9/9_3D_BD_023.png">
+Menos de 10% do banco de dados para treinamento (acuracy: 90%)
+
+---
+*Comprimento Sepala X Comprimento Petala X Largura Petala*
+
+---
+
+<img src = "Graficos/33/33_3D_BD_123.png">
+33% do banco de dados para treinamentos (acuracy: 95,1%)
+
+---
+<img src = "Graficos/10/10_3D_BD_123.png">
+10% do banco de dados para treinamento (acuracy: 92,307%)
+
+---
+<img src = "Graficos/9/9_3D_BD_123.png">
+Menos de 10% do banco de dados para treinamento (acuracy: 90%)
+
+---
 ---
 
 
-
-Gráficos com vetores apenas da base de dados (>10% para treinamento)
-
+##### Gráficos 3D com o banco de dados + 2mil vetores aleatórios
 ---
-[2D - 5.1.4-9](https://uploaddeimagens.com.br/imagens/fLpODpI)
-
-[3D - 5.1.4-10](https://uploaddeimagens.com.br/imagens/t8m7LAQ )
-
-
----
-Gráficos com 1000 vetores aleatórios (>10% para treinamento)
-
----
-[2D - 5.1.4-11](https://uploaddeimagens.com.br/imagens/iFLVl0o)
-
-[3D - 5.1.4-12](https://uploaddeimagens.com.br/imagens/JYTumPM)
+*Comprimento Sepala X Largura Sepala X Comprimento Petala*
 
 ---
 
-
-### 5.1.5 Analise dos gráficos
+<img src = "Graficos/33/33_3D_2K_012.png">
+33% do banco de dados para treinamentos (acuracy: 95,1%)
 
 ---
-#### DUAS DIMENSÕES E TRÊS DIMENSÕES (APENAS COM O BANCO DE DADOS)
+<img src = "Graficos/10/10_3D_2K_012.png">
+10% do banco de dados para treinamento (acuracy: 92,307%)
 
->Ao compararmos os gráficos [5.1.4-1](https://uploaddeimagens.com.br/imagens/a0g3Pgk) (possui a maior % de treinamento dentre os presentes) com os [5.1.4-5](https://uploaddeimagens.com.br/imagens/4YxHqbc) e [5.1.4-9](https://uploaddeimagens.com.br/imagens/fLpODpI), podemos notar que a diferença entre eles, é minima, indicando que possivelmente os falsos positivos se repetem, dificultando assim, a contastação a olho nu de possiveis divergência entre eles. O mesmo padrão se repete ao analisarmos os gráficos em 3 dimensões e que só possuem os vetores do banco de dados. Deixando assim a análise inconclusiva e fazendo que seja necessário adicionar mais vetores para uma analise mais rigorosa ou analisarmos o espeço amostral em mais dimensões. 
+---
+<img src = "Graficos/9/9_3D_2K_012.png">
+Menos de 10% do banco de dados para treinamento (acuracy: 90%)
 
-#### TRÊS DIMENSÕES (BANCO DE DADOS + 1000 VETORES ALEATÓRIOS)
+---
+*Comprimento Sepala X Largura Sepala X Largura Petala*
 
->Ao analisarmos e comparamos os gráficos [5.1.4-4](https://uploaddeimagens.com.br/imagens/pxRjk50), com os gráficos [5.1.4-8](https://uploaddeimagens.com.br/imagens/ElFX2Ag) e [5.1.4-12](https://uploaddeimagens.com.br/imagens/JYTumPM) 
-
-
-
-
-
-
+---
 
 
+<img src = "Graficos/33/33_3D_2K_013.png">
+33% do banco de dados para treinamentos (acuracy: 95,1%)
 
+---
+<img src = "Graficos/10/10_3D_2K_013.png">
+10% do banco de dados para treinamento (acuracy: 92,307%)
 
+---
+<img src = "Graficos/9/9_3D_2K_013.png">
+Menos de 10% do banco de dados para treinamento (acuracy: 90%)
 
+---
+*Comprimento Sepala X Comprimento Petala X Largura Petala*
 
+---
+
+<img src = "Graficos/33/33_3D_2K_023.png">
+33% do banco de dados para treinamentos (acuracy: 95,1%)
+
+---
+<img src = "Graficos/10/10_3D_2K_023.png">
+10% do banco de dados para treinamento (acuracy: 92,307%)
+
+---
+<img src = "Graficos/9/9_3D_2K_023.png">
+Menos de 10% do banco de dados para treinamento (acuracy: 90%)
+
+---
+*Largura Sepala X Comprimento Petala X Largura Petala*
+
+---
+
+<img src = "Graficos/33/33_3D_2K_123.png">
+33% do banco de dados para treinamentos (acuracy: 95,1%)
+
+---
+<img src = "Graficos/10/10_3D_2K_123.png">
+10% do banco de dados para treinamento (acuracy: 92,307%)
+
+---
+<img src = "Graficos/9/9_3D_2K_123.png">
+Menos de 10% do banco de dados para treinamento (acuracy: 90%)
+
+---
+> Mesmo se tratando de dados que possuem uma dimensão > 3 sendo representados em um gráfico de 3 dimensões, nota-se que que no evento aleatório que utilizou 10% do banco de dados para o treinamento, gerou uma destribuição distintas dos demais.
+
+---
+---
+
+### 5.3 Novos vetores aleatórios e não aleatório
+---
+#### Função $\Psi(\lambda)$
+Seja $\nu$ a previsão da máquina e sejam
+
+$\beta,n,\mu\in\mathbb{R}\\\lambda = [x_1,x_2,\dots,x_n]\\\lambda\in\psi\\\Xi(\lambda)\in\mathbb{R^{n}}$
+
+---
+$$\eta= \bigcup_{i}^{\psi}{\sum\sqrt{\bigcup_{j}^{i}{\bigcup_{k}^{n}{\sum(\sigma(\mu_k)^{2})}}}}$$
+$\Psi(\lambda) := \eta$
+
+> Tal Função Psi foi desenvolvida da seguinte forma:
+
+```python
+    def prevn(self, ob):
+        prev = ""
+        teste = Flowers(ob)
+        m = [sum([sum([(teste.lista(k)-j.lista(k))**2 for k in range(len(j.args_num))])**(1/2) for j in i])for i in self.matrix] # Calcula a média das espécies que se encontram a  norma_novo_vetor +- 0.4
+        m = [m[i]/len(self.matrix[i]) for i in range(len(m))]
+        if ((m[0] < m[1]) & (m[0] < m[2])):
+            teste.species = "versicolor"
+            self.matrix[0].append(teste)
+            prev = "Versicolor"
+
+        if ((m[1] < m[0]) & (m[1] < m[2])):
+            teste.species = "setosa"
+            self.matrix[1].append(teste)
+            prev = "Setosa"
+
+        if ((m[2] < m[1]) & (m[2] < m[0])):
+            teste.species = "virginica"
+            self.matrix[2].append(teste)
+            prev = "Virginica"
+        return prev
+```
+
+---
+---
+## 6. Conclusão
+
+> Quando analisamos as diferenças dos gráficos podemos notar a adaptação do modelo, visto que ao inserir dados aleatórios de uma forma continua, a distribuição das espécies muda de lugar e/ou quadrante, demostrando assim, que é possivel prever dados que variam com o tempo, mas se tratam da mesma espécie.
 
