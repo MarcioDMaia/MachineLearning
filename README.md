@@ -624,7 +624,10 @@ Menos de 10% do banco de dados para treinamento (acuracy: 90%)
 #### Função $\Psi(\lambda)$
 Seja $\nu$ a previsão da máquina e sejam
 
-$\beta,n,\mu\in\mathbb{R}\\\lambda = [x_1,x_2,\dots,x_n]\\\lambda\in\psi\\\Xi(\lambda)\in\mathbb{R^{n}}$
+$\beta,n,\mu\in\mathbb{R}$
+$\lambda = [x_1,x_2,\dots,x_n]$
+$\lambda\in\psi$
+$\Xi(\lambda)\in\mathbb{R^{n}}$
 
 ---
 $$\eta= \bigcup_{i}^{\psi}{\sum\sqrt{\bigcup_{j}^{i}{\bigcup_{k}^{n}{\sum(\sigma(\mu_k)^{2})}}}}$$
